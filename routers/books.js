@@ -4,7 +4,7 @@ import { isAuth } from "../middleware/isAuth.js";
 
 const router = express.Router();
 
-router.get("/",isAuth, getBooks);
+router.get("/", getBooks);
 router.post("/", isAuth, createBook);
 router.get("/:id", getBookById);
 
